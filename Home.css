@@ -1,0 +1,229 @@
+.homepage {
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  color: white;
+  border: 1px solid transparent;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.homepage .header {
+  background-color: #042242;
+  opacity: 0.7;
+  float: right;
+  padding-bottom: 0.1em;
+  margin-bottom: 2%;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  
+}
+
+.homepage .header a {
+  font-size: smaller;
+  color: white;
+  text-decoration: none;
+}
+
+.homepage .middle1 {
+  background-color: #02101f;
+  opacity: 0.8;
+  border: 1px solid transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+  width: 100%;
+}
+
+.homepage .middle1 img {
+  margin-top: -2em;
+  margin-bottom: -2.7em;
+  margin-left: 2em;
+  margin-right: 5em;
+  float: left;
+  width: 45%;
+ 
+}
+
+.homepage .middle1 a {
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgb(180, 212, 238);
+  text-decoration: none;
+  margin-right: 0.5em;
+  opacity: .9;
+}
+
+.homepage .middle1 .left-middle1 {
+  float: left;
+}
+
+.homepage .middle1 .right-middle1 {
+  vertical-align: middle;
+  
+}
+
+.homepage .middle2 {
+  background: rgba(19, 26, 39, 0.1);
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.homepage .middle2 h1 {
+  font-size: 2.5em;
+  font-weight: lighter;
+  padding-top: 0.2em;
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  opacity: 1.0;
+  letter-spacing: 0.2em;
+}
+
+.homepage .container {
+  border: 6px solid transparent;
+  margin-bottom: 2em;
+  font-size: small;
+  width: 100%;
+}
+
+.homepage .container img {
+  width: 100%;
+}
+
+.homepage .container .column {
+  background-color: #02101f;
+  opacity: .8;
+  float: left;
+  width: 33.33%;
+
+}
+
+.homepage .container .leftpane {
+  padding: 16px;
+  text-align: left;
+  
+}
+
+.homepage .container .middlepane {
+  padding: 16px;
+  text-align: left;
+}
+
+.homepage .container .rightpane {
+  padding: 16px;
+  text-align: left;
+}
+
+.homepage .container a {
+  color: rgb(160, 212, 235);
+  font-family: cursive;
+}
+
+.homepage .footer {
+  margin-top: 30em;
+  background-color: #02101f;
+  opacity: 0.6;
+  border: .5px solid transparent;
+  font-size: small;
+  width: 100.5%;
+  padding: -12rem;
+  
+}
+
+.homepage .footer p {
+  text-align: center;
+}
+
+.homepage .footer a {
+  color: white;
+}
+
+.service-container {
+  border: 1px solid transparent;
+  margin-top: 2em;
+  font-size: small;
+  width: 100%;
+}
+
+.service-container .service-column {
+  width: 100%;
+}
+
+.service-container .service-leftpane {
+  float: left;
+  background-color: #02101f;
+  opacity: 0.7;
+  width: 30%;
+  padding: 2em;
+}
+
+.service-container .service-leftpane img {
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+.service-container .service-leftpane a {
+  color: white;
+  font-size: medium;
+}
+
+.service-container .service-leftpane .line {
+  width: 100%;
+  border: 1px solid #393a31;
+}
+
+.service-container .service-rightpane {
+  width: 62.5%;
+  background-color: #02101f;
+  opacity: 0.7;
+  float: right;
+  padding-left: 1em;
+}
+
+.service-container .service-rightpane h1 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.service-container .service-rightpane .line {
+  width: 100%;
+  border: 1px solid #393a31;
+}
+
+.service-container .service-rightpane .service-lowerpane {
+  background-color: #02101f;
+  opacity: 1;
+}
+
+.service-container .service-rightpane .service-lowerpane span {
+  border-radius: 10%;
+  padding: 0.2em;
+  background: #075094;
+}
+
+.service-footer {
+  margin-top: 30em;
+  background-color: #072a50;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  font-size: small;
+  width: 100%;
+}
+
+.service-footer p {
+  text-align: center;
+}
+
+.service-footer a {
+  color: white;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+a.active {
+  background-color: #04aa6d;
+  color: white;
+}
