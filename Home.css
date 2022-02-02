@@ -7,7 +7,7 @@
   margin-right: 220px;
 }
 
-.homepage .header {
+.homepage .head_nav {
   background-color: #042242;
   opacity: 0.7;
   float: right;
@@ -18,13 +18,13 @@
   
 }
 
-.homepage .header a {
+.homepage .head_nav a {
   font-size: smaller;
   color: white;
   text-decoration: none;
 }
 
-.homepage .middle1 {
+.homepage .mid1 {
   background-color: #02101f;
   opacity: 0.8;
   border: 1px solid transparent;
@@ -34,7 +34,7 @@
   width: 100%;
 }
 
-.homepage .middle1 img {
+.homepage .mid1 img {
   margin-top: -2em;
   margin-bottom: -2.7em;
   margin-left: 2em;
@@ -44,7 +44,7 @@
  
 }
 
-.homepage .middle1 a {
+.homepage .mid1 a {
   vertical-align: middle;
   text-transform: uppercase;
   color: rgb(180, 212, 238);
@@ -53,43 +53,42 @@
   opacity: .9;
 }
 
-.homepage .middle1 .left-middle1 {
+.homepage .mid1 .leftmidd {
   float: left;
 }
 
-.homepage .middle1 .right-middle1 {
+.homepage .mid1 .rightmid {
   vertical-align: middle;
   
 }
 
-.homepage .middle2 {
+.homepage .mid2 {
   background: rgba(19, 26, 39, 0.1);
   border: 1px solid transparent;
   width: 100%;
 }
 
-.homepage .middle2 h1 {
+.homepage .mid2 h1 {
   font-size: 2.5em;
   font-weight: lighter;
   padding-top: 0.2em;
   padding-left: 0.5em;
-  text-transform: uppercase;
   opacity: 1.0;
   letter-spacing: 0.2em;
 }
 
-.homepage .container {
+.homepage .Inbox {
   border: 6px solid transparent;
   margin-bottom: 2em;
   font-size: small;
   width: 100%;
 }
 
-.homepage .container img {
+.homepage .Inbox img {
   width: 100%;
 }
 
-.homepage .container .column {
+.homepage .Inbox .col {
   background-color: #02101f;
   opacity: .8;
   float: left;
@@ -97,43 +96,43 @@
 
 }
 
-.homepage .container .leftpane {
+.homepage .Inbox .left {
   padding: 16px;
   text-align: left;
   
 }
 
-.homepage .container .middlepane {
+.homepage .Inbox .middle {
   padding: 16px;
   text-align: left;
 }
 
-.homepage .container .rightpane {
+.homepage .Inbox .right {
   padding: 16px;
   text-align: left;
 }
 
-.homepage .container a {
+.homepage .Inbox a {
   color: rgb(160, 212, 235);
   font-family: cursive;
 }
 
-.homepage .footer {
+.homepage .Lastline {
   margin-top: 30em;
   background-color: #02101f;
   opacity: 0.6;
-  border: .5px solid transparent;
+  border: .6px solid transparent;
   font-size: small;
-  width: 100.5%;
-  padding: -12rem;
+  width: 100%;
+  padding: -10rem;
   
 }
 
-.homepage .footer p {
+.homepage .Lastline p {
   text-align: center;
 }
 
-.homepage .footer a {
+.homepage .Lastline a {
   color: white;
 }
 
