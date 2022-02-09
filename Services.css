@@ -1,150 +1,153 @@
 .homepage{
-    font-family: "Trebuchet MS", sans-serif;
-    font-style: normal;
-    color:rgb(235, 235, 235);
-    border:  1px solid transparent;
-    margin-left: 220px;
-    margin-right: 220px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  color:rgb(235, 235, 235);
+  border:  1px solid transparent;
+  margin-left: 220px;
+  margin-right: 220px;
+  background-size: 100%;
 }
 .homepage .home_nav {
-    background-color: #042242;
-    opacity: 0.7;
-    float: right;
-    padding-bottom: 0.1em;
-    margin-bottom: 2%;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-  }
+  background-color: #042242;
+  opacity: 0.7;
+  float: right;
+  padding-bottom: 0.1em;
+  margin-bottom: 2%;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.homepage .home_nav a {
+  font-size: smaller;
+  color: white;
+  text-decoration: none;
+}
+.homepage .mid1
+{
+  background-color: #02101f;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: inline-block;
+  width: 100%;
+}
+.homepage .mid1 img
+{
+  margin-top: -2em;
+  margin-bottom: -2.7em;
+  margin-left: 2em;
+  margin-right: 5em;
+  float: left;
+  width: 45%;
+}
+.homepage .mid1 a
+{
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  margin-right: 0.5em;
+}
+.homepage .mid1 .leftmid {
+  float: left;
+}
+
+.homepage .mid1 .rightmid {
+  vertical-align: middle;
+}
+
+.homepage .mid2 
+{
+  border: 1px solid transparent;
+  margin-top: 2em;
+  font-size: small;
+  width: 100%;
   
-  .homepage .home_nav a {
-    font-size: smaller;
-    color: white;
-    text-decoration: none;
-  }
-  .homepage .mid1
-  {
-    background-color: #02101f;
-    opacity: 0.7;
-    border: 1px solid transparent;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    display: inline-block;
+}
+.homepage .mid2column
+{
     width: 100%;
-  }
-  .homepage .mid1 img
-  {
-    margin-top: -2em;
-    margin-bottom: -2.7em;
-    margin-left: 2em;
-    margin-right: 5em;
-    float: left;
-    width: 45%;
-  }
-  .homepage .mid1 a
-  {
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    margin-right: 0.5em;
-  }
-  .homepage .mid1 .leftmid {
-    float: left;
-  }
   
-  .homepage .mid1 .rightmid {
-    vertical-align: middle;
-  }
-
-  .homepage .mid2 
-  {
-    border: 1px solid transparent;
-    margin-top: 2em;
-    font-size: small;
-    width: 100%;
-    
-  }
-  .homepage .mid2column
-  {
-      width: 100%;
-    
-  }
-  .mid2column .leftcol
-  {
-      float:left;
-      background-color: #03101f;
-      opacity: 0.7;
-      width: 30%;
-      padding: 2em;
-  }
-
-
-  .mid2 .mid2column .leftcol img
-  {
-      width: 100%;
-      margin-bottom: 1em;
-  }
-  .mid2 .mid2column .leftcol a
-  {
-   color: white;
-   font-size: medium;
-  }
-  .mid2 .leftcol .line {
-   width: 100%;
-   border: 1px solid ;
- }
-  .homepage .mid2 .rightcol {
-   width: 63.94%;
-   background-color: #02101f;
-   opacity: 0.68;
-  
-   padding-left:1em;
-  position: absolute;
-   right: -4rem;
-   
- }
- 
- .mid2 .rightcol h1 {
-   color: white;
-   letter-spacing: 0.2em;
- }
- 
- .mid2 .rightcol .line2 {
-   width: 100%;
-   border: 1px solid #183569;
-   
- }
- 
- .mid2 .rightcol .bottombox {
-   background-color: #02101f;
-   opacity: 1;
- }
- .mid2 .rightcol .bottombox .inbottombox
- {
-     padding-left: 1.2rem;
- }
- 
- .mid2 .rightcol .bottombox span {
-   border-radius: 10%;
-   padding: 0.2em;
-   background: #075094;
-   padding-bottom: -1rem;
- }
- .bottom {
-    margin-top: 35.5em;
-    background-color: #062749;
+}
+.mid2column .leftcol
+{
+    float:left;
+    background-color: #03101f;
     opacity: 0.7;
-    border: 1px solid transparent;
-    font-size: small;
-    width: 100%;
-    }
-  .bottom p {
-    text-align: center;
-  }
-    .bottom a {
-    color: white;
-  }
-  
- 
-  
+    width: 30.3%;
+    padding: 2em;
+}
 
+
+.mid2 .mid2column .leftcol img
+{
+    width: 100%;
+    margin-bottom: 1em;
+}
+.mid2 .mid2column .leftcol a
+{
+ color: white;
+ font-size: medium;
+}
+.mid2 .leftcol .line {
+ width: 100%;
+ border: 1px solid ;
+}
+.homepage .mid2 .rightcol {
+  background-color: #02101f;
+  opacity: 0.68;
+  margin-left: 378.5px;
+  width:66%;
+  padding-top: .7rem;
+  padding-bottom: 1rem;
+  
+  
+}
+
+.mid2 .rightcol h1 {
+ color: white;
+ letter-spacing: 0.2em;
+ padding-left: 1rem;
+}
+.mid2 .rightcol p{
+  font-size: 1.02rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.mid2 .rightcol .line2 {
+ width: 100%;
+ border: 1px solid #183569;
+ 
+}
+
+.mid2 .rightcol .bottombox {
+ background-color: #02101f;
+ opacity: 1;
+}
+.mid2 .rightcol .bottombox .inbottombox
+{
+   padding-left: 1.2rem;
+}
+
+.mid2 .rightcol .bottombox span {
+ border-radius: 10%;
+ padding: 0.2em;
+ background: #075094;
+ padding-bottom: -1rem;
+}
+.bottom {
+  margin-top: 2em;
+  background-color: #062749;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  font-size: small;
+  width: 100%;
+  }
+.bottom p {
+  text-align: center;
+}
+  .bottom a {
+  color: white;
+}
