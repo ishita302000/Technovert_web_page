@@ -72,7 +72,7 @@
   .mid2column .leftcol
   {
       float:left;
-      background-color: #02101f;
+      background-color: #03101f;
       opacity: 0.7;
       width: 30%;
       padding: 2em;
@@ -96,10 +96,10 @@
   .homepage .mid2 .rightcol {
    width: 63.94%;
    background-color: #02101f;
-   opacity: 0.7;
-  float: right;
+   opacity: 0.68;
+  
    padding-left:1em;
-    position: absolute;
+  position: absolute;
    right: -4rem;
    
  }
@@ -132,19 +132,16 @@
  }
  .bottom {
     margin-top: 35.5em;
-    background-color: #072a50;
+    background-color: #062749;
     opacity: 0.7;
     border: 1px solid transparent;
     font-size: small;
     width: 100%;
-    
-  }
-  
+    }
   .bottom p {
     text-align: center;
   }
-  
-  .bottom a {
+    .bottom a {
     color: white;
   }
   
