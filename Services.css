@@ -93,16 +93,11 @@
    width: 100%;
    border: 1px solid ;
  }
-  .homepage .mid2 .rightcol {
-   width: 63.94%;
-   background-color: #02101f;
-   opacity: 0.68;
-  
-   padding-left:1em;
-  position: absolute;
-   right: -4rem;
-   
- }
+.homepage .mid2 .rightcol {
+    background-color: #02101f;
+    opacity: 0.68;
+    margin-left: 35%;
+}
  
  .mid2 .rightcol h1 {
    color: white;
