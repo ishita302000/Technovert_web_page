@@ -10,12 +10,13 @@
 .homepage .head_nav {
   background-color: #042242;
   opacity: 0.7;
-  float: right;
+  position: absolute;
+  left: 63.2%;
   padding-bottom: 0.1em;
   margin-bottom: 2%;
   padding-left: 0.4em;
   padding-right: 0.4em;
-  
+  top:0;
 }
 
 .homepage .head_nav a {
@@ -30,16 +31,17 @@
   border: 1px solid transparent;
   padding-top: 1%;
   padding-bottom: 1%;
-  display: inline-block;
+  display: flex;
   width: 100%;
+  margin-top: 3%;
 }
 
 .homepage .mid1 img {
   margin-top: -2em;
-  margin-bottom: -2.7em;
+  margin-bottom: -3em;
   margin-left: 2em;
   margin-right: 5em;
-  float: left;
+  
   width: 45%;
  
 }
@@ -53,13 +55,15 @@
   opacity: .9;
 }
 
-.homepage .mid1 .leftmidd {
-  float: left;
-}
+
 
 .homepage .mid1 .rightmid {
   vertical-align: middle;
-  
+    display: inline;
+    right: 131%;
+    font-size: larger;
+    left: revert;
+
 }
 
 .homepage .mid2 {
@@ -78,10 +82,16 @@
 }
 
 .homepage .Inbox {
+  
   border: 6px solid transparent;
   margin-bottom: 2em;
-  font-size: small;
+  font-size: 95%;
   width: 100%;
+  height: 70%;
+  max-height: 50%;
+  display: inline-flex;
+  position: relative;
+  
 }
 
 .homepage .Inbox img {
@@ -91,7 +101,6 @@
 .homepage .Inbox .col {
   background-color: #02101f;
   opacity: .8;
-  float: left;
   width: 33.33%;
 
 }
@@ -119,13 +128,13 @@
 }
 
 .homepage .Lastline {
-  margin-top: 30em;
   background-color: #02101f;
   opacity: 0.6;
   border: .6px solid transparent;
   font-size: small;
   width: 100%;
   padding: -10rem;
+  margin-top: -1rem;
   
 }
 
