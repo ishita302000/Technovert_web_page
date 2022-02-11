@@ -1,46 +1,44 @@
-.homepage{
-  font-family: "Trebuchet MS", sans-serif;
-  font-style: normal;
-  color:rgb(235, 235, 235);
-margin-top: -01;
-  margin-left: 220px;
-  margin-right: 220px;
-  background-size: 100%;
+.homepage {
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: normal;
+    color: rgb(235, 235, 235);
+    margin-top: -01;
+    margin-left: 220px; /* Don't use px for more than 50px */
+    margin-right: 220px;
+    background-size: 100%;
 }
-.homepage .home_nav {
-  background-color: #042242;
-  opacity: 0.7;
-  float: right;
-  padding-bottom: 0.1em;
-  margin-bottom: 2%;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
-}
+    .homepage .home_nav {
+        background-color: #042242;
+        opacity: 0.7;
+        float: right; /* remove float */
+        padding-bottom: 0.1em;
+        margin-bottom: 2%;
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
 
 .homepage .home_nav a {
   font-size: smaller;
   color: white;
   text-decoration: none;
 }
-.homepage .mid1
-{
-  background-color: #02101f;
-  opacity: 0.7;
-  border: 1px solid transparent;
-  padding-top: -.8%;
-  padding-bottom: 1%;
-  display: inline-block;
-  width: 100%;
-}
-.homepage .mid1 img
-{
-  margin-top: -2em;
-  margin-bottom: -2.7em;
-  margin-left: 2em;
-  margin-right: 5em;
-  float: left;
-  width: 45%;
-}
+    .homepage .mid1 {
+        background-color: #02101f;
+        opacity: 0.7;
+        border: 1px solid transparent;
+        padding-top: -.8%; /*Why negative - don't use negative if until no other option*/
+        padding-bottom: 1%;
+        display: inline-block;
+        width: 100%;
+    }
+    .homepage .mid1 img {
+        margin-top: -2em;
+        margin-bottom: -2.7em;
+        margin-left: 2em;
+        margin-right: 5em;
+        float: left; /* remove float */
+        width: 45%;
+    }
 .homepage .mid1 a
 {
   vertical-align: middle;
