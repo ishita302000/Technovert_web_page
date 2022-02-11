@@ -54,15 +54,16 @@
   margin-right: 0.5em;
   opacity: .9;
 }
-
-
+.homepage .mid1 .leftmidd
+{
+     
+}
 
 .homepage .mid1 .rightmid {
-  vertical-align: middle;
     display: inline;
-    right: 131%;
-    font-size: larger;
-    left: revert;
+    
+    font-size: 140%;
+       right: 2rem;
 
 }
 
