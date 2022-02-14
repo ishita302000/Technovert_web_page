@@ -1,3 +1,15 @@
+ body 
+ {
+      background-image: url("bg.jpg");
+      background-repeat: no-repeat;
+      background-size:100%;
+      padding: 0;
+      margin: 0;
+      min-height: 100% !important;
+      height: 100%;
+      overflow: hidden;
+  }
+
 .homepage {
   font-family: "Trebuchet MS", sans-serif;
   font-style: normal;
@@ -5,39 +17,44 @@
   border: 1px solid transparent;
   margin-left: 13rem;
   margin-right: 12rem;
+  height: 100%;
+  min-height: 100% !important;
+  overflow: hidden;
 }
 
-.homepage .head_nav {
+.homepage .sidenav {
   background-color: #042242;
   opacity: 0.7;
-  position: absolute;
-  left: 65.2%;
+  position: fixed;
+  right:12em;
   padding-bottom: 0.1em;
   margin-bottom: 2%;
   padding-left: 0.4em;
   padding-right: 0.4em;
   top:0;
   display:inline-block;
+  height: 1.5em;
+  max-height: 1em !important;
 }
 
-.homepage .head_nav a {
+.homepage .sidenav a {
   font-size: smaller;
   color: white;
   text-decoration: none;
 }
 
-.homepage .mid1 {
+.homepage .midnav {
   background-color: #02101f;
   opacity: 0.8;
   border: 1px solid transparent;
   padding-top: 1%;
   padding-bottom: 1%;
-  display: flex;
   width: 100%;
   margin-top: 3%;
+  display:inline-block;
 }
 
-.homepage .mid1 img {
+.homepage .midnav img {
   margin-top: -2em;
   margin-bottom: -3em;
   margin-left: 2em;
@@ -45,41 +62,47 @@
   width: 45%;
 }
 
-.homepage .mid1 a {
-  vertical-align: middle;
+.homepage .midnav a {
   text-transform: uppercase;
   color: rgb(180, 212, 238);
   text-decoration: none;
   margin-right: 0.5em;
   opacity: .9;
 }
-.homepage .mid1 .leftmidd
+.homepage .midnav .leftmidd
 {
-     
+  display:inline-block;
+  margin-right: 20rem;   
 }
 
-.homepage .mid1 .rightmid {
-    display: inline;
-    
-    font-size: 140%;
-       right: 2rem;
-
+.homepage .midnav .rightmid {
+    display:inline-block;
+    position: fixed;
+    font-size:large;
+       right: 13rem;
+       overflow: hidden;
+       margin-left: 25rem;
+   list-style: none;
 }
-
-.homepage .mid2 {
+.homepage .midheading {
   background: rgba(19, 26, 39, 0.1);
   border: 1px solid transparent;
   width: 100%;
   height:10rem;
 }
 
-.homepage .mid2 h1 {
+.homepage .midheading h1 {
   font-size: 2.5em;
   font-weight: lighter;
   padding-top: 0.2em;
   padding-left: 0.5em;
+  text-transform: uppercase;
   opacity: 1.0;
   letter-spacing: 0.2em;
+}
+pre{
+  margin-left: 0rem;
+  margin-right: 12rem;
 }
 
 .homepage .Inbox {
@@ -88,10 +111,11 @@
   margin-bottom: 2em;
   font-size: 95%;
   width: 100%;
-  height: 70%;
-  max-height: 50%;
+  height: 50%;
+  max-height: 70% !important;
   display: inline-flex;
   position: relative;
+  overflow: hidden;
   
 }
 
@@ -128,7 +152,7 @@
   font-family: cursive;
 }
 
-    .homepage .Lastline {
+    .homepage .fotter {
         background-color: #02101f;
         opacity: 0.6;
         border: .6px solid transparent;
@@ -140,11 +164,11 @@
         margin-right: -0.4rem;
     }
 
-.homepage .Lastline p {
+.homepage .fotter p {
   text-align: center;
 }
 
-.homepage .Lastline a {
+.homepage .fotter a {
   color: white;
 }
 

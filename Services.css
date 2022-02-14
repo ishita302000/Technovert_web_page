@@ -7,7 +7,7 @@
   background-size: 100%;
   padding-top: 2rem;
 }
-.homepage .home_nav {
+.homepage .sidenav {
   background-color: #042242;
   opacity: 0.7;
   position: absolute;
@@ -19,12 +19,12 @@
   top:0;
 }
 
-.homepage .home_nav a {
+.homepage .sidenav a {
   font-size: smaller;
   color: white;
   text-decoration: none;
 }
-.homepage .mid1
+.homepage .midnav
 {
   background-color: #02101f;
   opacity: 0.7;
@@ -33,7 +33,7 @@
   display: inline-block;
   width: 99.5%;
 }
-.homepage .mid1 img
+.homepage .midnav img
 {
   margin-top: -2em;
   margin-bottom: -2.7em;
@@ -41,7 +41,7 @@
   margin-right: 5em;
   width: 45%;
 }
-.homepage .mid1 a
+.homepage .midnav a
 {
   vertical-align: middle;
   text-transform: uppercase;
@@ -49,12 +49,12 @@
   text-decoration: none;
   margin-right: 0.5em;
 }
-.homepage .mid1 .leftmid {
+.homepage .midnav .leftmid {
   display: inherit;
   left:0;
 }
 
-.homepage .mid1 .rightmid {
+.homepage .midnav .rightmid {
   vertical-align: middle;
   display: inline;
   right: auto;
@@ -65,7 +65,7 @@
   /* letter-spacing: .1rem; */
 }
 
-.homepage .mid2 
+.homepage .Inbox
 {
   border: 1px solid transparent;
   margin-top: 2em;
@@ -73,12 +73,12 @@
   width: 100%;
   
 }
-.homepage .mid2column
+.homepage .Inboxcolumn
 {
     width: 100%;
   display: inline-flex;
 }
-.mid2column .leftcol
+.Inboxcolumn .leftcol
 {
    background-color: #03101f;
     opacity: 0.7;
@@ -88,21 +88,21 @@
 }
 
 
-.mid2 .mid2column .leftcol img
+.Inbox .Inboxcolumn .leftcol img
 {
     width: 100%;
     margin-bottom: 1em;
 }
-.mid2 .mid2column .leftcol a
+.Inbox .Inboxcolumn .leftcol a
 {
  color: white;
  font-size: medium;
 }
-.mid2 .leftcol .line {
+.Inbox .leftcol .line {
  width: 100%;
  border: 1px solid ;
 }
-.homepage .mid2 .rightcol {
+.homepage .Inbox .rightcol {
   background-color: #02101f;
   opacity: 0.68;
  
@@ -113,39 +113,39 @@
   
 }
 
-.mid2 .rightcol h1 {
+.Inbox .rightcol h1 {
  color: white;
  letter-spacing: 0.2em;
  padding-left: 1rem;
 }
-.mid2 .rightcol p{
+.Inbox .rightcol p{
   font-size: 1.02rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.mid2 .rightcol .line2 {
+.Inbox .rightcol .line2 {
  width: 100%;
  border: 1px solid #183569;
  
 }
 
-.mid2 .rightcol .bottombox {
+.Inbox .rightcol .bottombox {
  background-color: #02101f;
  opacity: 1;
 }
-.mid2 .rightcol .bottombox .inbottombox
+.Inbox .rightcol .bottombox .inbottombox
 {
    padding-left: 1.2rem;
 }
 
-.mid2 .rightcol .bottombox span {
+.Inbox .rightcol .bottombox span {
  border-radius: 10%;
  padding: 0.2em;
  background: #075094;
  padding-bottom: -1rem;
 }
-.bottom {
+.fotter {
   margin-top: 2em;
   background-color: #062749;
   opacity: 0.7;
@@ -154,9 +154,9 @@
   width: 100%;
   display:inline-block;
   }
-.bottom p {
+.fotter p {
   text-align: center;
 }
-  .bottom a {
+  .fotter a {
   color: white;
 }
