@@ -1,0 +1,98 @@
+body
+{
+    background: url("background12.png");
+    background-size:100%;
+    padding: 0;
+    margin: 0;  
+}
+.homepage
+{
+   
+}
+.homepage .inbox
+{
+    font-family: "Trebuchet MS", sans-serif;
+    font-style: normal;
+    
+    border: 7px solid transparent;
+    margin-left: 13rem;
+    margin-right: 13rem;
+    
+}
+.homepage .topnav{
+    height: 3rem;
+    display: inline-block;
+}
+.homepage .inbox .leftopnav
+{
+    lighting-color: blue;
+    display:inline-block;
+    position: fixed;
+}
+.homepage .inbox .sidetopnav
+{
+    font-size:small;
+    color: rgb(85, 81, 81); position: fixed;
+    right:18em;
+    padding-bottom: 0.1em;
+    top: 1rem;
+    display: inline-block;
+}
+ul.list
+{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+hr{
+    width: 100%;
+    margin-left: 0%;
+    height: 2px;
+    margin-bottom: -.5rem;
+}
+.homepage .midnav
+{
+    height: 2.5rem;
+    top:0;
+    background-color: rgb(192, 194, 194);
+    opacity: .8;
+}
+ul.list2
+{
+    margin-top: 1rem;
+    list-style-type: none;
+    margin-left: -2rem;
+}
+li{
+    display: inline-block;
+}
+ul.list3
+{
+    list-style-type: circle;
+    margin-left: -2rem;
+    margin-top: 2%;
+    color: rgb(15, 35, 100);
+    opacity: .8;
+}
+.homepage .bottomnav .brideimg
+{
+     top: 7.2rem;
+    position: fixed;
+    right: 22rem;
+    display: inline-block;
+}
+.homepage .bottomnav .text
+{
+    color: rgb(15, 35, 100);
+    display:inline-block;
+    position: fixed;
+    right: 15rem;
+    top:7rem;
+    opacity: .8;
+}
+.homepage .bottomnav
+{
+    height: 3rem;
+    max-height: 3rem !important;
+}
