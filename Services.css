@@ -1,0 +1,162 @@
+.homepage{
+  font-family: "Trebuchet MS", sans-serif;
+  font-style: normal;
+  color:rgb(235, 235, 235);
+  margin-left: 14rem;
+  margin-right: 15rem;
+  background-size: 100%;
+  padding-top: 2rem;
+}
+.homepage .sidenav {
+  background-color: #042242;
+  opacity: 0.7;
+  position: absolute;
+  left: 60.8%;
+  padding-bottom: 0.1em;
+  margin-bottom: 2%;
+  padding-left: 0.4em;
+  padding-right: 0.6em;
+  top:0;
+}
+
+.homepage .sidenav a {
+  font-size: smaller;
+  color: white;
+  text-decoration: none;
+}
+.homepage .midnav
+{
+  background-color: #02101f;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  padding-bottom: 1%;
+  display: inline-block;
+  width: 99.5%;
+}
+.homepage .midnav img
+{
+  margin-top: -2em;
+  margin-bottom: -2.7em;
+  margin-left: 2em;
+  margin-right: 5em;
+  width: 45%;
+}
+.homepage .midnav a
+{
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  margin-right: 0.5em;
+}
+.homepage .midnav .leftmid {
+  display: inherit;
+  left:0;
+}
+
+.homepage .midnav .rightmid {
+  vertical-align: middle;
+  display: inline;
+  right: auto;
+}
+.rightmid {
+  font-size: 130%;
+
+  /* letter-spacing: .1rem; */
+}
+
+.homepage .Inbox
+{
+  border: 1px solid transparent;
+  margin-top: 2em;
+  font-size: small;
+  width: 100%;
+  
+}
+.homepage .Inboxcolumn
+{
+    width: 100%;
+  display: inline-flex;
+}
+.Inboxcolumn .leftcol
+{
+   background-color: #03101f;
+    opacity: 0.7;
+    width: 35%;
+    padding: 2em;
+    display: inline;
+}
+
+
+.Inbox .Inboxcolumn .leftcol img
+{
+    width: 100%;
+    margin-bottom: 1em;
+}
+.Inbox .Inboxcolumn .leftcol a
+{
+ color: white;
+ font-size: medium;
+}
+.Inbox .leftcol .line {
+ width: 100%;
+ border: 1px solid ;
+}
+.homepage .Inbox .rightcol {
+  background-color: #02101f;
+  opacity: 0.68;
+ 
+  width:60%;
+  padding-top: .7rem;
+  padding-bottom: 1rem;
+  
+  
+}
+
+.Inbox .rightcol h1 {
+ color: white;
+ letter-spacing: 0.2em;
+ padding-left: 1rem;
+}
+.Inbox .rightcol p{
+  font-size: 1.02rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.Inbox .rightcol .line2 {
+ width: 100%;
+ border: 1px solid #183569;
+ 
+}
+
+.Inbox .rightcol .bottombox {
+ background-color: #02101f;
+ opacity: 1;
+}
+.Inbox .rightcol .bottombox .inbottombox
+{
+   padding-left: 1.2rem;
+}
+
+.Inbox .rightcol .bottombox span {
+ border-radius: 10%;
+ padding: 0.2em;
+ background: #075094;
+ padding-bottom: -1rem;
+}
+.fotter {
+  margin-top: 2em;
+  background-color: #062749;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  font-size: small;
+  width: 100%;
+  display:inline-block;
+  }
+.fotter p {
+  text-align: center;
+}
+  .fotter a {
+  color: white;
+}
