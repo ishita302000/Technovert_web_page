@@ -101,34 +101,222 @@ ul.list2
  width: 75%;
  margin: auto;
  height: 26.5rem;
+margin-top: .4rem !important;
 
 }
 .topsubinbox
-{
-   
-    background-color: rgb(180, 24, 141);
+{ 
+    background-color: rgb(250, 250, 250);
     display: flex;
     margin: auto;
     height:26.5rem;
-    padding-left: .5em;
+    position: fixed;
+    width: 75%;
 
 }
 .leftinbox
 {
- padding-left: 0em;
+ padding-left: .5em;
  padding-top: .5em;
  padding-right: .5em;    
 }
 .rightinbox
 {
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(44, 42, 42);
     color: white;
-    padding-top: .5em;
-    padding-bottom: .5em;
     margin-top: 0.5rem;
-    padding-left: 1rem;
     margin-bottom: 0.5rem;   
     margin-right: .5rem;
     right: .5em;
-    width: 30rem;
+    width: 29.5rem;
+    
 }
+.rightinbox-container
+{
+   border-top: 1.5px solid;
+   border-left: 1.5px solid;
+   border-bottom: 1.5px solid;
+   border-right: 1.5px solid;
+   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+   border-color: rgb(78, 76, 76);
+   height: 21.2rem;
+   padding: 1.6rem;
+}   
+.rightinbox-container p{
+        color: #8c8b8a;
+        margin: 0 0.5em;
+}
+.rightinbox-container a{
+    color: #8c8b8a;
+    text-decoration: underline;
+}
+.rightinbox-container h2{
+    
+        font-weight: normal;
+        font-size: 2em;
+        color: #fff;
+        margin: 0 0 0.5em 0.25em;
+      
+}
+.menu-options {
+    margin: 1.5em 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: .5rem;
+  }
+  
+  .menu-options li {
+    padding: 0.4em 0.5em;
+  }
+  
+  .menu-options li:not(:last-child) {
+    border-bottom: 1px solid #8c8b8a;
+  }
+  
+  .menu-options li a {
+    text-decoration: none;
+    color: #d4d3d2;
+    font-size: 1.1em;
+  }
+  .bottomsubinbox
+  {
+      background-color:  #2e2f2c;
+      height: 12rem;
+      width: 75%;
+      margin: auto;
+      display: flex;
+     
+  }
+  .bottom-container{
+    background-color: rgb(253, 250, 252);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+    padding-left: 0.5em;
+    width: 100%;
+   margin-right: .5rem;
+    margin-left: .5rem; 
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    }
+    .tile {
+        position: relative;
+      }
+      
+      .tile img {
+        display: block;
+      }
+      .content {
+        height: 90%;
+        width: 120%;
+        position: absolute;
+        top: 0px;
+        left: 01px;
+        border-right: 1px solid #eaeaea;
+      }
+    
+      
+      .content h3 {
+        font-weight: normal;
+        color: #6b6b6a;
+        margin: 0;
+        font-size: 100%;
+      }
+      
+      .content p {
+        margin: 0;
+        margin-top: 1%;
+        font-size: 70%;
+        color: #a1a0a1;
+        display: flex;
+      }
+      
+      .content a {
+        color: #7c87a3;
+        font-size: 90%;
+        margin-left: 11rem;
+      }
+      
+      .glass .content {
+        top: 8%;
+        left: 8%;
+        padding-right: 10%;
+      }
+      
+      .glass .content a {
+        float: right;
+        margin-top: 6%;
+        margin-right: 10%;
+      }
+      
+      .plate .content {
+        width: 110%;
+        height: 110%;
+        top: -18%;
+      }
+      
+      .plate .content a {
+        float: right;
+        margin-right: 15%;
+        margin-top: 5%;
+      }
+      
+      .frame .content {
+        border: none;
+        left: -60%;
+        top: 3%;
+        width: 80%;
+      }
+      
+      .frame .content a {
+        float: right;
+        margin-top: 20%;
+        margin-left: 13%;
+      }
+      footer
+      {
+        width: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5% 0;
+      }
+       
+   footer a {
+    font-size: 0.75em;
+    color: #373738;
+    text-decoration: underline;
+  }
+  
+  .footer-links {
+    margin: 0 0 2% 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .footer-links li {
+    padding: 0 2%;
+    border-left: 1px solid #1f1e1f;
+  }
+  
+  .footer-links li:first-child {
+    padding-left: 0;
+    border-left: none;
+  }
+  
+  footer p {
+    color:  #373738;
+    font-size: 0.8em;
+    margin: 0 0 2% 0;
+  }
+  
+  .mail-id {
+    font-size: 1em;
+  }
+  
+  .signup form input {
+    font-size: 0.8em;
+    width: 60%;
+  }
