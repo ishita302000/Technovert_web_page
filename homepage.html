@@ -8,6 +8,49 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="backdrop visible">
+        <form class="new-employee">
+               <h2 class="formHeading">Add new employee</h2>
+               <label for="firstName">First Name*</label>
+               <input id="firstName" type="text" required/>
+               <label for="lastName">Last Name*</label>
+               <input id="lastName" type="text" required/>
+               <label for="preferredName">Preferred Name</label>
+				<input id="preferredName" type="text" />
+				<label for="email">Email*</label>
+				<input id="email" type="email" />
+				<label for="jobTitle">Job Title*</label>
+                <select name="jobTitle" id="jobTitle" required>
+                    <option value="SharePoint Practice Head">SharePoint Practice Head</option>
+					<option value=".Net Development Lead">.Net Development Lead</option>
+					<option value="Recruiting Expert">Recruiting Expert</option>
+					<option value="BI Developer">BI Developer</option>
+					<option value="Business Analyst">Business Analyst</option>
+                </select>
+                <label for="office">Office*</label>
+				<select name="office" id="office" required>
+					<option value="India">India</option>
+					<option value="Seattle">Seattle</option>
+				</select>
+				<label for="department">Department*</label>
+				<select name="department" id="department" required>
+					<option value="IT">IT</option>
+					<option value="Human Resources">Human Resources</option>
+					<option value="MD">MD</option>
+					<option value="Sales">Sales</option>
+				</select>
+				<label for="phoneNumber">Phone Number*</label>
+				<input id="phoneNumber" type="tel" pattern="^\d{10}$" required />
+				<label for="skypeId">Skype ID*</label>
+				<input id="skypeId" type="text" />
+				<div class="button-group">
+					<button class="submit" type="submit">Submit</button>
+					<button class="cancel" type="button" onclick="closeNewEmployeeForm()">
+						Cancel
+					</button>
+				</div>
+        </form>
+    </div>
     <header>
         <div class="brand">
             <img src="logo.png" alt="Logo" />
@@ -99,12 +142,242 @@
         <div class="main-container">
             <div class="filter">
                  <div class="alphabets">
-                       <button id="all" class="alpha-btn" onclick="displayAllEmployees()">
-
+                    <button id="all" class="alpha-btn" onclick="displayAllEmployees()">
+                        <ion-icon name="person" role="img" class="md hydrated" aria-label="person"></ion-icon>
+                    </button>
+                       <button id="a" class="alpha-btn" onclick="searchEmployeesByAttr('a')">
+                        A
                        </button>
+                       <button
+							id="b"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('b')"
+						>
+						B
+						</button>
+						<button
+							id="c"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('c')"
+						>
+							C
+						</button>
+						<button
+							id="d"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('d')"
+						>
+							D
+						</button>
+						<button
+							id="e"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('e')"
+						>
+							E
+						</button>
+						<button
+							id="f"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('f')"
+						>
+							F
+						</button>
+						<button
+							id="g"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('g')"
+						>
+							G
+						</button>
+						<button
+							id="h"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('h')"
+						>
+							H
+						</button>
+						<button
+							id="i"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('i')"
+						>
+							I
+						</button>
+						<button
+							id="j"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('j')"
+						>
+							J
+						</button>
+						<button
+							id="k"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('k')"
+						>
+							K
+						</button>
+						<button
+							id="l"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('l')"
+						>
+							L
+						</button>
+						<button
+							id="m"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('m')"
+						>
+							M
+						</button>
+						<button
+							id="n"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('n')"
+						>
+							N
+						</button>
+						<button
+							id="o"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('o')"
+						>
+							O
+						</button>
+						<button
+							id="p"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('p')"
+						>
+							P
+						</button>
+						<button
+							id="q"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('q')"
+						>
+							Q
+						</button>
+						<button
+							id="r"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('r')"
+						>
+							R
+						</button>
+						<button
+							id="s"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('s')"
+						>
+							S
+						</button>
+						<button
+							id="t"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('t')"
+						>
+							T
+						</button>
+						<button
+							id="u"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('u')"
+						>
+							U
+						</button>
+						<button
+							id="v"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('v')"
+						>
+							V
+						</button>
+						<button
+							id="w"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('w')"
+						>
+							W
+						</button>
+						<button
+							id="x"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('x')"
+						>
+							X
+						</button>
+						<button
+							id="y"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('y')"
+						>
+							Y
+						</button>
+						<button
+							id="z"
+							class="alpha-btn"
+							onclick="searchEmployeesByAttr('z')"
+						>
+							Z
+						</button>
+                 </div>
+                 <div class="search-add">
+                    <form class="search" onsubmit="newEmployeeSubmitHandler(e)">
+                        <label for="search-text">Search</label>
+                        <div class="search-container">
+                            <input
+                                id="search-field"
+                                type="text"
+                                placeholder="Enter any keyword"
+                                oninput="searchEmployeesByAttr(this.value)"
+                            />
+                            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+                        </div>
+                        <button class="clear" onclick="clearSearch(); return false;">
+                            Clear
+                        </button>
+                        <label for="filter">Filter by</label>
+                        <select name="filters" id="filters">
+                            <option value="firstName">First Name</option>
+                            <option value="lastName">Last Name</option>
+                            <option value="preferredName" selected="selected">
+                                Prefrred Name
+                            </option>
+                            <option value="email">Email</option>
+                            <option value="jobTitle">Job Title</option>
+                            <option value="office">Office</option>
+                            <option value="department">Department</option>
+                            <option value="phoneNumber">Phone Number</option>
+                            <option value="skypeId">Skype ID</option>
+                        </select>
+                    </form>
+                    <button
+							class="add-employee-btn"
+							onclick="newEmployeeClickHandler('add', null)"
+						>
+							Add Employee
+						</button>
                  </div>
             </div>
+
+            <p class="note">
+                <span>Note : </span>Please use the advance filter options to refine
+                your results.
+            </p>
+            <div class="employee-list"></div>
         </div>
     </main>
+    <script src="Homepage.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
 </body>
 </html>
