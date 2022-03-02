@@ -4,144 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css"  >
     <title>Document</title>
-    <link rel="stylesheet" href="homepage.css" /> 
 </head>
 <body>
-           <div class=" topnav">
-               <div class="leftopnav">
-                   <img src="logo.png" alt="logo">
-               </div>
-               <div class="sidetopnav">
-                   <ul class="list">
-                       <li>Welcome Jeffery (Sign Out)                    |</li>
-                       <li>My Account |</li>
-                       <li><img src="icon_cart.png" alt="logo"/> 999 Items - $9999.99 Checkout |</li>
-                       <li>Customer Service</li> 
-                   </ul>
-               </div>
-           </div>
-           <div class="midnav-container-outer">
-               <div class="midnav-container-inner">
-                <div class="midnav">
-               <div class="leftsubinbox">
-                <ul class="list2">
-                  <li>Dining</li>
-                  <li>Crystal</li>
-                  <li>By Brand</li>
-                  <li>What's New </li>
-                  <li>Find a Gift </li>
-                  <li>Weeding Ideas </li>
-                  <li>Clearence & Special Offers </li> 
-                </ul>
-             </div>
-             <div class="rightsubinbox">
-                <div class="search-container">
-                    <form>
-                        <input
-                            type="text"
-                            placeholder="Search Keyword/Item #"
-                            name="search"
-                        />
-                        <button type="submit">Go</button>
-                    </form>
-                </div>
-             </div>
+    <header>
+        <div class="brand">
+            <img src="logo.png" alt="Logo" />
+            <div class="title">
+                <h1>Employee Directory</h1>
+                <p>The Ultimate People Directory Experience</p>
             </div>
-           </div>
-           </div>
-           <div class="bottom-nav-container">
-           <div class="bottomnav">
-            <ul class="list3">
-                <li> Free Shipping on Orders Over $150</li>
-                <li>Holiday Platters</li>
-                <li>Celebrate Thanksgiving</li>
-              </ul> 
-              <div class="brideimg">
-              <img src="bridelRegistry.jpg" alt="logo"/>
-              <p>Bridal Registry</p>
-              </div>
-           </div>
         </div>
-
-           <div class="subinbox">
-                <div class="topsubinbox">
-                   <div class="leftinbox">
-                        <img src = "Recipe.jpg" alt="Recipe"/>
-                   </div>
-                   <div class="rightinbox">
-                       <div class="rightinbox-container">
-                        <h2>Dress your table</h2>
-                        <p>
-                          Create a fabulous new look for your next event. Choose from
-                          various styles and ideas.
-                        </p>
-                        <ul class="menu-options">
-                          <li><a href="">Contemporary</a></li>
-                          <li><a href="">Traditional</a></li>
-                          <li><a href="">Brunch</a></li>
-                          <li><a href="">Themes</a></li>
-                          <li><a href="">Buffet</a></li>
-                          <li><a href="">Wine & Cheese</a></li>
-                        </ul>
-                        <a href="">See More Dress Your Table Ideas</a>
-                       </div>
-                   </div>
-                </div>
+        <div class="user">
+            <h1 class="welcome">Welcome,</h1>
+            <h1>Ishita Goel</h1>
+            <img src="ishita.jpeg" alt="profile image" />
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <div class="departments">
+                  <h2>Departments</h2>
+                  <ul>
+                     <li id="it" onclick="filterEmployeesByAttr('department','IT')">
+                        IT<span>(</span><span id="itNo"></span><span>)</span>
+                     </li> 
+                     <li id="hr" onclick="filterEmployeesByAttr('department','HR')">
+                        Human Resources  <span>(</span><span id="hrNo"></span><span>)</span>
+                     </li >
+                     <li id="md" onclick="filterEmployeesByAttr('department','MD')">
+                        MD <span>(</span><span id="mdNo"></span><span>)</span>
+                     <li
+                        id="sales"  onclick="filterEmployeesByAttr('department', 'Sales')" >
+                        Sales <span>(</span><span id="sNo"></span><span>)</span>
+                     </li>
+                  </ul>
             </div>
-                <div class="bottomsubinbox">
-                  <div class="bottom-container">
-                            <div class="tile glass">
-                                <img src="promo_glass.png" alt="glass"/>
-                                <div class="content">
-                                    <h3>You'll love our fine stemware collection</h3>
-                                    <p>Duis autem vel eum iriure dolor in hendrerit vulputate.</p>
-                                    <a href="">See all stemware</a>
-                                  </div>
-                            </div>
-                            <div class="tile plate">
-                                <img src="promo_plates.png" alt="plate" />
-                                <div class="content">
-                                    <h3>Home accent for the holidays</h3>
-                                    <p>Lorem ipsum dolor in amet, consectetuer adipiscing elit.</p>
-                                    <a href="">See all home accents</a>
-                                  </div>
-                            </div>
-                            <div class="tile frame">
-                                <img src="promo_album.png" alt="frame" />
-                                <div class="content">
-                                    <h3>Mikasa clearance sale 20% to 80% off</h3>
-                                    <p>Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
-                                    <a href="">See all clearance items</a>
-                                  </div>
-                            </div>
-                       </div>
-                    </div>
-                     <footer>
-                        <div class="info">
-                            <ul class="footer-links">
-                              <li><a href="">About Mikasa</a></li>
-                              <li><a href="">Customer Service</a></li>
-                              <li><a href="">Privacy Policy</a></li>
-                            </ul>
-                            <p>
-                              For assistance, call us at 1.8666.645.2721 (Mon - Fri 8:30am - 6:00pm
-                              est) or <a class="mail-id" href="" type="email">Email Us</a>
-                            </p>
-                            <p>&copy; Copyright 2008 Mikasa & Company</p>
-                          </div>
-                          <div class="signup">
-                            <p>Sign up to receive special offers & promotions from Mikasa.</p>
-                            <form>
-                              <input
-                                type="email"
-                                name="email"
-                                placeholder="Enter your email address"
-                              />
-                              <button type="submit">SIGN UP</button>
-                            </form>
-                          </div>
-                     </footer>
-                
-        </body>
+            <div class="offices">
+                <h2>Offices</h2>
+                <ul>
+                    <li
+                        id="seattle"
+                        onclick="filterEmployeesByAttr('office', 'Seattle')"
+                    >
+                        Seattle <span>(</span><span id="stNo"></span><span>)</span>
+                    </li>
+                    <li id="india" onclick="filterEmployeesByAttr('office', 'India')">
+                        India <span>(</span><span id="inNo"></span><span>)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="job-titles">
+                <h2>Job Titles</h2>
+                <ul>
+                    <li
+                        id="sharePoint"
+                        onclick="filterEmployeesByAttr('jobTitle', 'SharePoint Practice Head')"
+                    >
+                        SharePoint Practice Head <span>(</span><span id="sphNo"></span
+                        ><span>)</span>
+                    </li>
+                    <li
+                        id="dotnet"
+                        onclick="filterEmployeesByAttr('jobTitle', '.Net Development Lead')"
+                    >
+                        .Net Development Lead <span>(</span><span id="netNo"></span
+                        ><span>)</span>
+                    </li>
+                    <li
+                        id="recruit"
+                        onclick="filterEmployeesByAttr('jobTitle', 'Recruiting Expert')"
+                    >
+                        Recruiting Expert <span>(</span><span id="recNo"></span
+                        ><span>)</span>
+                    </li>
+                    <li
+                        id="bidev"
+                        onclick="filterEmployeesByAttr('jobTitle', 'BI Developer')"
+                    >
+                        BI Developer <span>(</span><span id="biNo"></span><span>)</span>
+                    </li>
+                    <li
+                        id="business"
+                        onclick="filterEmployeesByAttr('jobTitle', 'Business Analyst')"
+                    >
+                        Business Analyst <span>(</span><span id="baNo"></span
+                        ><span>)</span>
+                    </li>
+                </ul>
+                <p class="view-more">view more</p>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="filter">
+                 <div class="alphabets">
+                       <button id="all" class="alpha-btn" onclick="displayAllEmployees()">
+
+                       </button>
+                 </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
