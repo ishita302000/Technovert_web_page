@@ -1,24 +1,24 @@
 
 let employees = [
 	{
-		id: '123412341234',
+		id: '12344444',
 		firstName: 'Ishita',
 		lastName: 'Goel',
-		preferredName: 'Ishita',
-		email: 'ishitagoel3020@gmail.com',
+		preferredName: 'Ishita Goel',
+		email: 'ishitagoel@gmail.com',
 		jobTitle: '.Net Development Lead',
 		office: 'India',
 		department: 'IT',
-		phoneNumber: '7535960450',
+		phoneNumber: '6303321486',
 		skypeId: '123456',
 		photo: 'Ishita.jpg',
 	},
 ];
 
-let displayEmployees = employees; // array of displayed employees 
+let displayEmployees = employees; // array of employees that are being displayed
 
 const filters = [
-	// filters based on employee department, office etc
+	// filters based on employee department, office and jobTitle
 	{
 		type: 'department',
 		names: [
@@ -80,7 +80,7 @@ const filters = [
 	},
 ];
 
-const getHtmlForEmployeeList = () => {
+const getHtmlForEmployeeList = () => {            //not working
 	// generated html to display employees
 	var finalHtml = '';
 	for (idx in displayEmployees) {
@@ -105,7 +105,7 @@ const getHtmlForEmployeeList = () => {
 	return finalHtml;
 };
 
-const getHtmlForEmployeeDetails = (employee) => {
+const getHtmlForEmployeeDetails = (employee) => {         //not working
 	// generates html for employee details
 	let finalHtml = `
 	<img src="./images/users/${employee.photo}" alt="User Image" />
@@ -113,8 +113,8 @@ const getHtmlForEmployeeDetails = (employee) => {
 	<div class="detail">
 		<h3>First Name :</h3>
 		<p>${employee.firstName}</p>
-	</div/>
-		<div class="detail">
+	</div>
+	<div class="detail">
 		<h3>Last Name :</h3>
 		<p>${employee.lastName}</p>
 	</div>
@@ -146,7 +146,7 @@ const getHtmlForEmployeeDetails = (employee) => {
 		<button class="edit" id="${employee.id}" onclick="newEmployeeClickHandler('edit', this.id)">Edit</button>
 		<button class="delete" id="${employee.id}" onclick="deleteEmployee(this.id)">Delete</delete>
 	</div>
-	`;   //
+	`;
 
 	return finalHtml;
 };
@@ -189,7 +189,7 @@ const getNoOfEmp = (type, name) => {
 };
 
 const updateNoOfEmp = () => {
-
+	// updates the number of employees on webpage
 	for (let idx1 in filters) {
 		for (let idx2 in filters[idx1].names) {
 			obj = document.querySelector(filters[idx1].names[idx2].tagSelector);
@@ -258,24 +258,22 @@ const searchEmployeesByAttr = (val) => {
 };
 
 const displayAllEmployees = () => {
-	// displays all the employees
-
+	// displays all the employees without any filters
 	displayEmployees = employees;
 	renderEmployeeList();
 };
 
 const newEmployeeClickHandler = (addOrEdit, empId) => {
-	// form for editing or adding details
+	// opens a form for editing or adding employee details
 	let backdrop = document.querySelector('.backdrop');
-	backdrop.classList.remove('hidden');           //check
+	backdrop.classList.remove('hidden');
 	backdrop.classList.add('visible');
 	let heading = document.querySelector('.formHeading');
 	let form = document.querySelector('.new-employee');
 	if (addOrEdit == 'add') {
 		heading.innerHTML = 'Add new employee';
 		form.id = 'add';
-	} 
-	else if (addOrEdit == 'edit') {
+	} else if (addOrEdit == 'edit') {
 		heading.innerHTML = 'Edit Employee Details';
 		let detailsBackdrop = document.querySelector('#detailBackdrop');
 		detailsBackdrop.classList.remove('visible');
@@ -310,7 +308,7 @@ const deleteEmployee = (empId) => {
 };
 
 const closeNewEmployeeForm = () => {
-	// closes the form
+	// closes the form that is used for adding or editing employee details
 	let backdrop = document.querySelector('.backdrop');
 	backdrop.classList.remove('visible');
 	backdrop.classList.add('hidden');
@@ -331,7 +329,7 @@ const newEmployeeSubmitHandler = (e) => {
 			department: e.target[6].value,
 			phoneNumber: e.target[7].value,
 			skypeId: e.target[8].value,
-			photo: 'Ishita.jpeg',
+			photo: 'Ishita.jpg',
 		};
 		if (newEmployee.preferredName === '') {
 			newEmployee.preferredName = `${newEmployee.firstName} ${newEmployee.lastName}`;
@@ -368,7 +366,7 @@ const newEmployeeSubmitHandler = (e) => {
 };
 
 const openEmployeeDetails = (ele) => {
-	// opens an employee details
+	// opens an employee details when clicked
 	let employee = employees.find((emp) => emp.id === ele.id);
 	let employeeDetailsHtml = getHtmlForEmployeeDetails(employee);
 	let backdrop = document.querySelector('#detailBackdrop');
@@ -379,7 +377,7 @@ const openEmployeeDetails = (ele) => {
 };
 
 const closeEmployeeDetails = (e) => {
-	// closes the employee detail
+	// closes the employee details popup when clicked on the background
 	let backdrop = document.querySelector('#detailBackdrop');
 	if (backdrop.isSameNode(e.target)) {
 		backdrop.classList.remove('visible');
@@ -387,7 +385,9 @@ const closeEmployeeDetails = (e) => {
 	}
 };
 
-
+/* Updates number of employees and renders employee list for the first time */
+updateNoOfEmp();
+renderEmployeeList();
 
 /* HTML element selector */
 let newEmployeeForm = document.querySelector('.new-employee');
