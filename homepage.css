@@ -8,7 +8,6 @@
     background: #fff;
     padding: 2% 0 1% 0;
     border: 1px solid #737373;
-    line-height: 2rem;
 }
 .new-employee label {
 	margin: 0 auto 1% 14%;
@@ -66,7 +65,7 @@
 }
 
 .visible {
-    display: none;
+    display: block;
 }
 form{
     align-items: center;
@@ -76,7 +75,7 @@ form{
     margin-bottom: 1%;
 }
 .backdrop {
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 999;
@@ -85,7 +84,7 @@ form{
     background: rgba(255, 255, 255, 0.5);
 }
 .hidden {
-	display:block;
+	display:none;
 }
 
 body{
