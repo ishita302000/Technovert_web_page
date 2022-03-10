@@ -69,6 +69,7 @@
 }
 form{
     align-items: center;
+	font-family: sans-serif;
 }
 .formHeading
 {
@@ -99,6 +100,7 @@ header {
 	justify-content: space-between;
 	padding-bottom: 1%;
 	border-bottom: 1px solid #e6e6e6;
+	font-family: sans-serif;
 }
 .brand {
 	display: flex;
@@ -238,6 +240,7 @@ label {
 
 .search-container {
 	position: relative;
+	opacity: .7;
 }
 
 .search-icon {
@@ -268,6 +271,7 @@ label {
 	padding: 0.4em 1.8em;
 	background: #00b0fd;
 	color: #fff;
+	font-size: large;
 }
 
 .add-employee-btn:hover {
@@ -297,7 +301,7 @@ label {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-auto-rows: 110px;
 	grid-gap: 1%;
-    line-height: .5rem;
+    line-height: .3rem;
 }
 
 .employee {
@@ -305,7 +309,7 @@ label {
 	background: #e8e9e8;
 	align-items: center;
 	padding: 0.5em;
-	margin-bottom: 10px;
+	margin-bottom: 1px;
 	cursor: context-menu;
 }
 
@@ -321,18 +325,21 @@ label {
 .employee-details {
 	margin-left: 2%;
 	overflow: hidden;
+	
 }
 
 .employee-details h3 {
-	color: #6f6c6d;
+	color: #272626;
 	font-size: 1em;
+	font-family: sans-serif;
 }
 
 .employee-details p {
 	font-size: 0.9em;
-	color: #a9a8a8;
+	color: #756f6f;
+	font-family: sans-serif;
 }
 
 .employee-details .icons ion-icon {
-	color: #a9a8a8;
+	color: #756f6f;
 }
