@@ -176,7 +176,7 @@ const getHtmlForMoreJobTitles = () =>
 	jobTitleList = document.querySelector('#jobTitleList');
 	jobTitleList.innerHTML += getHtmlForMoreJobTitles();
 	element.style.display = 'none';
-	console.log(element);
+	
  };
 
 
