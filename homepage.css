@@ -1,4 +1,11 @@
-
+.sidebar
+{
+	width: 25%;
+}
+.main-container
+{
+	width: 100%;
+}
 .new-employee {
     margin: 3% auto 0 auto;
     display: flex;
@@ -46,7 +53,7 @@
 }
 
 .submit:active {
-	background: #0097fd;
+	background: #034570;
 }
 
 .button-group .cancel {
@@ -142,12 +149,12 @@ header {
 }
 main {
 	display: flex;
-	justify-content: space-between;
+
 	padding: 2% 0 0 2%;
 }
 .sidebar div:not(:first-child)
 {
-    margin-top:20%;
+    margin-top:11%;
 }
 .sidebar ul {
 	list-style-type: none;
@@ -174,10 +181,15 @@ main {
 }
 .alphabets {
 	display: inline-block;
+	width: 100%;
 }
-
+.filter
+{
+	display:inline-block;
+	width: 100%;
+}
 .alpha-btn {
-	width: 2em;
+	width: 3.37%;
 	height: 2em;
 	font-size: 20px;
 	padding: 0;
@@ -311,6 +323,7 @@ label {
 	padding: 0.5em;
 	margin-bottom: 1px;
 	cursor: context-menu;
+	width: 15rem;
 }
 
 .employee:hover {

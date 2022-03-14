@@ -101,7 +101,7 @@
             </div>
             <div class="job-titles">
                 <h2>Job Titles</h2>
-                <ul>
+                <ul id="jobTitleList">
                     <li
                         id="sharePoint"
                         onclick="filterEmployeesByAttr('jobTitle', 'SharePoint Practice Head')"
@@ -136,8 +136,10 @@
                         Business Analyst <span>(</span><span id="baNo"></span
                         ><span>)</span>
                     </li>
+
+				
                 </ul>
-                <p class="view-more">view more</p>
+                <p class="view-more" onclick="viewmoreJobtitle(this)">view more</p>
             </div>
         </div>
         <div class="main-container">

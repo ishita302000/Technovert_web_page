@@ -9,9 +9,9 @@ let employees = [
 		jobTitle: '.Net Development Lead',
 		office: 'India',
 		department: 'IT',
-		phoneNumber: '6303321486',
+		phoneNumber: '7535960450',
 		skypeId: '123456',
-		photo: 'Ishita.jpg',
+		photo: 'Ishita.jpeg',
 	},
 ];
 
@@ -150,6 +150,35 @@ const getHtmlForEmployeeDetails = (employee) => {         //not working
 
 	return finalHtml;
 };
+
+const getHtmlForMoreJobTitles = () =>
+ //generates Html for view more
+ {
+	 let jobsHtml = `<li
+					id="quality"
+					onclick="filterEmployeesByAttr('jobTitle', 'Quality Analyst')"
+				>
+					Quality Analyst (0) <span id="qaNo"></span
+					>
+				</li>
+				<li
+				id="marketing"
+				onclick="filterEmployeesByAttr('jobTitle', 'Marketing Manager')"
+			    >
+				Marketing Manager (0) <span id="mmNo"></span
+				>
+			</li>`
+	return jobsHtml;
+ };
+
+ const viewmoreJobtitle = (element) =>
+ {
+	jobTitleList = document.querySelector('#jobTitleList');
+	jobTitleList.innerHTML += getHtmlForMoreJobTitles();
+	element.style.display = 'none';
+	console.log(element);
+ };
+
 
 const renderEmployeeList = () => {
 	// renders employee list html
@@ -365,7 +394,7 @@ const newEmployeeSubmitHandler = (e) => {
 	displayAllEmployees();
 };
 
-const openEmployeeDetails = (ele) => {
+const openEmployeeDetails = (ele) => {               // not working
 	// opens an employee details when clicked
 	let employee = employees.find((emp) => emp.id === ele.id);
 	let employeeDetailsHtml = getHtmlForEmployeeDetails(employee);
