@@ -1,5 +1,5 @@
 
-let employees = [
+let employees = [ // JSON read & Write
 	{
 		id: '12344444',
 		firstName: 'Ishita',
@@ -15,8 +15,11 @@ let employees = [
 	},
 ];
 
+//use one variable which is read from JSON file.
 let displayEmployees = employees; // array of employees that are being displayed
 
+
+// use functions & move all constants in saparate file, import from there.
 const filters = [
 	// filters based on employee department, office and jobTitle
 	{
@@ -80,6 +83,8 @@ const filters = [
 	},
 ];
 
+
+//use functions // avoid writing html in JS try another ways possible
 const getHtmlForEmployeeList = () => {            //not working
 	// generated html to display employees
 	var finalHtml = '';
@@ -105,6 +110,8 @@ const getHtmlForEmployeeList = () => {            //not working
 	return finalHtml;
 };
 
+
+// avoid HTML here pass employee details
 const getHtmlForEmployeeDetails = (employee) => {         //not working
 	// generates html for employee details
 	let finalHtml = `
@@ -151,6 +158,8 @@ const getHtmlForEmployeeDetails = (employee) => {         //not working
 	return finalHtml;
 };
 
+
+// use display hide & block - write inside HTML only
 const getHtmlForMoreJobTitles = () =>
  //generates Html for view more
  {
@@ -397,7 +406,7 @@ const newEmployeeSubmitHandler = (e) => {
 const openEmployeeDetails = (ele) => {               // not working
 	// opens an employee details when clicked
 	let employee = employees.find((emp) => emp.id === ele.id);
-	let employeeDetailsHtml = getHtmlForEmployeeDetails(employee);
+	let employeeDetailsHtml = this.getHtmlForEmployeeDetails(employee);
 	let backdrop = document.querySelector('#detailBackdrop');
 	let details = document.querySelector('.details');
 	backdrop.classList.remove('hidden');
