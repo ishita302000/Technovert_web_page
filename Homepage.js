@@ -176,7 +176,8 @@ const getHtmlForMoreJobTitles = () =>
 			    >
 				Marketing Manager (0) <span id="mmNo"></span
 				>
-			</li>`
+			</li>
+			`
 	return jobsHtml;
  };
 
@@ -185,9 +186,7 @@ const getHtmlForMoreJobTitles = () =>
 	jobTitleList = document.querySelector('#jobTitleList');
 	jobTitleList.innerHTML += getHtmlForMoreJobTitles();
 	element.style.display = 'none';
-	
  };
-
 
 const renderEmployeeList = () => {
 	// renders employee list html
@@ -373,7 +372,8 @@ const newEmployeeSubmitHandler = (e) => {
 			newEmployee.preferredName = `${newEmployee.firstName} ${newEmployee.lastName}`;
 		}
 		employees = [...employees, newEmployee];
-	} else {
+	}
+	 else {
 		idx = employees.findIndex((emp) => emp.id == e.target.id);
 		employees[idx].firstName = e.target[0].value;
 		employees[idx].lastName = e.target[1].value;
