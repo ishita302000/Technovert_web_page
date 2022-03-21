@@ -1,6 +1,8 @@
 .sidebar
 {
 	width: 25%;
+	font-family: sans-serif;
+     color: rgb(77, 64, 64);
 }
 .main-container
 {
@@ -17,18 +19,19 @@
     border: 1px solid #737373;
 }
 .new-employee label {
-	margin: 0 auto 1% 14%;
+	margin: 0 auto 1% 9%;
 	font-weight: bold;
 }
 
 .new-employee select {
-	margin: 0 auto 1% 14%;
-	width: 50%;
-	height: 20px;
+	margin: 0 auto 1% 9%;
+	width: 82.4%;
+	height: 24px;
+	
 }
 
 .new-employee input {
-	width: 70%;
+	width: 81%;
 	margin-bottom: 2%;
 	border: 1px solid #737373;
 	height: 20px;
@@ -80,7 +83,7 @@ form{
 }
 .formHeading
 {
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .backdrop {
     position: fixed;
@@ -90,6 +93,7 @@ form{
     height: 100%;
     width: 100%;
     background: rgba(255, 255, 255, 0.5);
+	overflow: scroll;
 }
 .hidden {
 	display:none;
@@ -113,7 +117,9 @@ header {
 	display: flex;
 }
 .brand img {
-	width: 250px;
+	width: 16rem;
+    height: 5rem;
+    padding-top: 1rem;
 }
 .title h1 {
 	color: #63cdfc;
@@ -150,7 +156,7 @@ header {
 main {
 	display: flex;
 
-	padding: 2% 0 0 2%;
+	padding: 2% 0 0 .5%;
 }
 .sidebar div:not(:first-child)
 {
@@ -323,7 +329,7 @@ label {
 	padding: 0.5em;
 	margin-bottom: 1px;
 	cursor: context-menu;
-	width: 15rem;
+	width: 16rem;
 }
 
 .employee:hover {
