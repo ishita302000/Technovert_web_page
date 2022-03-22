@@ -15,6 +15,14 @@ let employees = [
 	},
 ];
 
+{
+	"userInput":[
+		{
+
+		}
+	];
+}
+
 let displayEmployees = employees; // array of employees that are being displayed
 
 const filters = [
