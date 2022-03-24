@@ -1,28 +1,32 @@
 
-let employees = [ // JSON read & Write
-	{
-		id: '12344444',
-		firstName: 'Ishita',
-		lastName: 'Goel',
-		preferredName: 'Ishita Goel',
-		email: 'ishitagoel@gmail.com',
-		jobTitle: '.Net Development Lead',
-		office: 'India',
-		department: 'IT',
-		phoneNumber: '7535960450',
-		skypeId: '123456',
-		photo: 'Ishita.jpeg',
-	},
-];
-
+//const car ={
+  //    make:"Honda",
+    //  model:"civic"
+//};
+//const me =JSON.stringify(car);
+//console.log(me);
 //use one variable which is read from JSON file.
-{
-	"userInput":[
-		{
 
-		}
-	];
-}
+
+//const displayemployee = require('./employee.json');
+//console.log(displayemployee);            // check
+const  fs = require('fs');
+fs.readFile('./employee.json' , 'utf-8' , (err , jsonString) =>{
+	if(err)
+	{
+		console.log("Error reading",err);
+		return;
+	}
+	try{
+//	console.log(jsonString.address);
+     const data=JSON.parse(jsonString);
+     console.log(data.id);
+	}
+	catch(err){
+             console.log("error parsing json strings" , err);
+	}
+ });
+
 
 let displayEmployees = employees; // array of employees that are being displayed
 

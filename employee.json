@@ -1,0 +1,15 @@
+[ 
+	{
+		"id": "12344444",
+		"firstName" : "Ishita",
+		"lastName" : "Goel",
+		"preferredName": "Ishita Goel",
+		"email": "ishitagoel@gmail.com",
+		"jobTitle": ".Net Development Lead",
+		"office": "India",
+		"department": "IT",
+		"phoneNumber": "7535960450",
+		"skypeId": "123456",
+		"photo": "Ishita.jpeg"
+	}
+]
